@@ -1,0 +1,14 @@
+{
+  "properties": [
+    {
+      "name": "project.safe",
+      "type": "java.lang.String",
+      "description": "Description for project.safe."
+    },
+    {
+      "name": "project.trace.pass",
+      "type": "java.lang.String",
+      "description": "Description for project.trace.pass."
+    }
+  ]
+}
