@@ -3,12 +3,12 @@
     {
       "name": "project.safe",
       "type": "java.lang.String",
-      "description": "Description for project.safe."
+      "description": "the project safe key."
     },
     {
       "name": "project.trace.pass",
       "type": "java.lang.String",
-      "description": "Description for project.trace.pass."
+      "description": "the project trace pass."
     }
   ]
 }

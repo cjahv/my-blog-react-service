@@ -1,12 +1,10 @@
 server:
   sessionTimeout: 1800
 spring:
-  datasource:
-    driver-class-name: org.sqlite.JDBC
   jpa.properties:
       hibernate:
-        hbm2ddl.auto: none
-        default_schema: lc
+        dialect: com.enigmabridge.hibernate.dialect.SQLiteDialect
+        hbm2ddl.auto: update
         format_sql: true
         show_sql: true
         current_session_context_class: org.springframework.orm.hibernate5.SpringSessionContext

@@ -1,10 +1,5 @@
 server:
   port: 8080
-spring:
-  datasource:
-    url: jdbc:mysql://test.linkcubic.com:9999/lc?characterEncoding=utf8&zeroDateTimeBehavior=convertToNull
-    username: lc
-    password: lc13579
 project:
   safe: Fa*3xsbKHaXEq#2wF18g35Q*RdNHdnuclsq0oS*DGw&Z0wDuYGbMeHpsmf3^tP75
   trace.pass: lc@2016
