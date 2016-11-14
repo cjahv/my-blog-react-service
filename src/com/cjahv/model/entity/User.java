@@ -1,6 +1,9 @@
 package com.cjahv.model.entity;
 
-import javax.persistence.*;
+import com.cjahv.model.entity.base.BaseEntity;
+
+import javax.persistence.Entity;
+import javax.persistence.Table;
 
 /**
  * 内容摘要 ：用户实体

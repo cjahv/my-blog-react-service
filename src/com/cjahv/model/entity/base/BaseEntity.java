@@ -1,4 +1,4 @@
-package com.cjahv.model.entity;
+package com.cjahv.model.entity.base;
 
 import com.sshp.core.model.entity.BaseEntityImpl;
 import org.hibernate.annotations.Cache;

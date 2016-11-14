@@ -2,7 +2,7 @@ package com.cjahv.controller;
 
 
 import com.cjahv.model.constant.UserConstant;
-import com.cjahv.model.entity.BaseEntity;
+import com.cjahv.model.entity.base.BaseEntity;
 import com.cjahv.model.entity.User;
 import com.cjahv.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;

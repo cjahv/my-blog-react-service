@@ -15,7 +15,8 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 @EntityScan("com.cjahv.model.entity")
 @EnableTransactionManagement(proxyTargetClass = true)
 public class Hibernate {
-  @Bean(name = "sessionFactory")
+
+  @Bean
   public HibernateJpaSessionFactoryBean sessionFactory() {
     return new HibernateJpaSessionFactoryBean();
   }
