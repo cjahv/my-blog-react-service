@@ -1,0 +1,3 @@
+[submodule "src/main/sshp"]
+	path = src/main/sshp
+	url = https://github.com/cjahv/sshp.git
