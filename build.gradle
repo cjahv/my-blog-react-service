@@ -1,0 +1,61 @@
+apply plugin: 'java'
+apply plugin: 'idea'
+apply plugin: 'maven'
+apply plugin: 'application'
+
+group = 'com.cjahv'
+version = '1.0'
+
+description = """my-blog-react-service"""
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+sourceSets {
+  main {
+    java {
+      srcDirs = ['src/main/java', 'src/main/sshp']
+    }
+  }
+}
+
+repositories {
+  maven { url "http://repo.maven.apache.org/maven2" }
+}
+dependencies {
+  compile(group: 'org.springframework.boot', name: 'spring-boot-starter-web', version: '1.4.2.RELEASE') {
+    exclude(module: 'spring-core')
+    exclude(module: 'slf4j-api')
+    exclude(module: 'jcl-over-slf4j')
+  }
+  compile(group: 'org.springframework.boot', name: 'spring-boot-starter-data-jpa', version: '1.4.2.RELEASE') {
+    exclude(module: 'spring-boot-starter')
+    exclude(module: 'spring-aop')
+    exclude(module: 'spring-beans')
+    exclude(module: 'spring-core')
+    exclude(module: 'hibernate-core')
+    exclude(module: 'dom4j')
+    exclude(module: 'hibernate-commons-annotations')
+    exclude(module: 'hibernate-jpa-2.1-api')
+    exclude(module: 'javassist')
+    exclude(module: 'spring-context')
+    exclude(module: 'aspectjweaver')
+  }
+  compile group: 'org.springframework', name: 'springloaded', version: '1.2.6.RELEASE'
+  compile(group: 'org.hibernate', name: 'hibernate-core', version: '5.0.11.Final') {
+    exclude(module: 'jboss-logging')
+  }
+  compile group: 'org.apache.commons', name: 'commons-lang3', version: '3.4'
+  compile group: 'com.alibaba', name: 'fastjson', version: '1.1.41'
+  compile group: 'org.springframework.boot', name: 'spring-boot-configuration-processor', version: '1.4.2.RELEASE'
+  compile group: 'com.enigmabridge', name: 'hibernate4-sqlite-dialect', version: '0.1.2'
+}
+
+buildscript {
+  repositories {
+    maven { url "http://repo.maven.apache.org/maven2" }
+  }
+  dependencies {
+    classpath 'org.springframework.boot:spring-boot-gradle-plugin:1.4.2.RELEASE'
+  }
+}

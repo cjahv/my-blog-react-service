@@ -1,9 +1,0 @@
-server:
-  port: 8080
-project:
-  safe: Fa*3xsbKHaXEq#2wF18g35Q*RdNHdnuclsq0oS*DGw&Z0wDuYGbMeHpsmf3^tP75
-  trace.pass: lc@2016
-logging.level:
-  root: DEBUG
-  org.hibernate: ERROR
-  org.springframework: DEBUG
